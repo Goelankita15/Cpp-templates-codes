@@ -1,0 +1,41 @@
+Binary exponentiation
+   if a^0, a^1, a^2, a^4, a^8... are known
+   then any a^b can be written where b is in binary format and at most logn multiplications need to be done
+    3^13 = 3^1101 = 3^8.3^4.3^1 
+
+    2^14 => res = 1
+    14 even , a = 4   , b = 7, res = 1
+    7 odd   , a = 4   , b = 6, res = 4
+    6 even  , a = 16  , b = 3, res = 4      O[logb]
+    3 odd   , a = 16  , b = 2, res = 64
+    2 even  , a = 256 , b = 1, res = 64
+    1 odd   , a = 256 , b = 0, res = 64*256
+                                  2^6*2^4*2^4 = 2^14
+
+
+GCD
+   highest num dividing both a and b
+   O[log(min(a, b))]
+
+Sieve
+    O[n*log(log(n))]
+
+fermet primarility test
+    a, p coprime and p prime
+    a^p-1 = 1 mod p 
+    if 2<= a <= p-2 eqn doesnot give 1 then not prime
+    surely prime is not identifiable
+
+Miller-rabin test
+    not prime can be determine but prime cannot
+    by dividing prime p = 2^s* d where d is odd
+
+Prime Factorization O[root(n)]
+Modulo inverse a, p coprime
+    a^p-2 = a^-1
+
+
+
+
+
+    2nd vrat - 23-06-2025
